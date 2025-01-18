@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page!</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            font-family: 'Lucida Sans';
+            height: 100vh;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form {
+            background-color: white;
+            padding: 25px;
+            margin: auto;
+            border-radius: 4px;
+        }
+
+        .form>div {
+            margin-bottom: 20px;
+        }
+
+        img {
+            height: 50px;
+        }
+
+        form label,
+        input {
+            margin: 5px;
+        }
+
+        form input {
+            padding: 5px;
+        }
+
+        .pswd {
+            position: relative;
+            left: 146px;
+            margin: 15px 0px;
+        }
+
+        .robo {
+            display: flex;
+            align-items: center;
+            padding: 14px;
+            border-radius: 3px;
+            border: 1px solid rgb(163, 158, 158);
+            background-color: rgb(240, 240, 240);
+        }
+
+        button {
+            color: white;
+            border: none;
+            margin-top: 17px;
+            border-radius: 4px;
+            padding: 4px 15px;
+            background-color: rgb(22, 227, 22);
+        }
+
+        @media (max-width: 450px) {
+
+            html,
+            body {
+                width: 100%;
+                overflow-x: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <div>
+                <img src="ghru.png" alt="">
+                <img src="cyber.png" alt="">
+            </div>
+            <form action="post">
+                <h3>Sign In</h3>
+                <div>
+                    <label for="username">User Name</label>
+                    <input type="text" id="username">
+                </div>
+                <div>
+                    <label for="pswd" style="margin-right: 16px;">Password</label>
+                    <input type="text" id="pswd">
+                </div>
+                <div class="pswd">Forgot Password?</div>
+                <div class="robo">
+                    <input type="checkbox" id="robot" style="width: 20px; height: 20px;">
+                    <label for="robot">I'm not a robot</label>
+                </div>
+                <center><button>Login</button></center>
+            </form>
+        </div>
+    </div>
+</body>
