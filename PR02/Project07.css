@@ -1,0 +1,578 @@
+* {
+    font-family: 'Lucida Sans';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0px;
+    background-color: rgba(0, 0, 0, 0.676);
+}
+
+span {
+    font-size: 45px;
+    font-weight: 600;
+    color: rgb(255, 115, 0);
+}
+
+nav ol {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    color: white;
+    font-size: 14px;
+    margin: 0px 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+li:hover {
+    color: rgb(255, 115, 0);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    color: white;
+    /* width: 200px; */
+    width: 18vw;
+    font-size: 17px;
+    padding: 7px 0px 7px 11px;
+    border-color: rgb(255, 115, 0);
+    background-color: rgba(255, 68, 0, 0);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 115, 0);
+}
+
+.search button {
+    color: white;
+    padding: 10px 14px;
+    font-size: 15px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.search button:hover {
+    color: black;
+}
+
+.main {
+    display: flex;
+    margin-top: 108px;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    width: 50vw;
+    margin-right: 170px;
+}
+
+.first pre {
+    font-size: 55px;
+    font-weight: 500;
+    padding: 0px;
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.first pre span {
+    font-size: 59px;
+    color: rgb(255, 115, 0);
+}
+
+.first p {
+    font-size: 17px;
+    margin: 15px 0px;
+    color: white;
+}
+
+.first button {
+    padding: 7px 40px;
+    font-size: 20px;
+    border-radius: 6px;
+    margin: 15px 0px;
+}
+
+.first button:hover {
+    background-color: white;
+}
+
+form {
+    width: 300px;
+    padding: 30px 0px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+form h4 {
+    font-size: 25px;
+    margin-bottom: 19px;
+    color: rgb(255, 115, 0);
+}
+
+form input {
+    color: white;
+    margin: 13px;
+    font-size: 15px;
+    padding: 7px 21px;
+    background-color: rgba(255, 51, 0, 0);
+}
+
+form button {
+    /* width: 235px; */
+    width: 77%;
+    margin: 13px;
+    font-size: 20px;
+    padding: 7px 9px;
+    border-radius: 8px;
+}
+
+form pre {
+    font-weight: 500;
+    margin: 13px 0px;
+}
+
+form pre a {
+    color: rgb(255, 115, 0);
+    cursor: pointer;
+}
+
+form p,
+pre {
+    font-size: 15px;
+    padding: 4px 15px;
+    color: white;
+}
+
+.icon a {
+    text-decoration: none;
+}
+
+.icon ion-icon {
+    color: #fff;
+    font-size: 20px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icon ion-icon:hover {
+    color: #ff7200;
+}
+
+
+
+/* For Mobile: apply effects/styles for screens having more than 350px, used for tablets */
+@media screen and (min-width: 350px) {
+    body {
+        background-color: rgb(8, 0, 255);
+    }
+
+    header{
+        padding: 25px 0px;
+    }
+
+    nav li {
+        font-size: larger;
+        margin: 0px 5px;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+    
+    .search input {
+        width: 220px;
+        font-size: 30px;
+        padding: 7px 0px 7px 40px;
+        border-color: rgb(255, 115, 0);
+        background-color: rgba(255, 68, 0, 0);
+        border-radius: 6px;
+    }
+    
+    .search button {
+        font-size: 30px;
+        border-radius: 6px;
+    }
+
+    .main {
+        margin-top: 108px;
+        flex-direction: column;
+    }
+
+    .first {
+        width: 85vw;
+        margin-right: 0px;
+        margin-bottom: 108px;
+        text-align: center;
+    }
+
+    .first pre {
+        font-size: 100px;
+    }
+
+    .first pre span {
+        font-size: 100px;
+    }
+
+    .first p {
+        margin-top: 40px;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+
+    .first button {
+        font-size: 45px;
+        padding: 15px 69px;
+        border-radius: 9px;
+        margin: 25px 0px;
+    }
+
+    form {
+        width: 600px;
+        padding: 50px 0px;
+        border-radius: 11px;
+    }
+
+    form h4 {
+        font-size: 55px;
+        margin-bottom: 43px;
+    }
+
+    form input {
+        margin: 18px;
+        font-size: 28px;
+        padding: 7px 26px;
+    }
+
+    form button {
+        width: 395px;
+        margin: 17px;
+        font-size: 34px;
+        padding: 14px 9px;
+    }
+
+    form pre a {
+        font-size: 55px;
+    }
+
+    form p,
+    pre {
+        font-size: 35px;
+    }
+
+    .icon ion-icon {
+        font-size: 50px;
+        padding-left: 14px;
+        padding-top: 55px;
+        transition: 0.3s ease;
+    }
+}
+
+
+
+/* For Tablets: apply effects/styles for screens having size more than 768px, used for tablets */
+/* @media screen and (min-width: 758px) {
+    body {
+        background-color: red;
+    }
+
+    nav li {
+        margin: 0px 5px;
+    }
+
+    .main {
+        margin-top: 65px;
+        flex-direction: column;
+    }
+
+    .first {
+        width: 75vw;
+        margin-right: 0;
+        margin-bottom: 78px;
+        text-align: center;
+    }
+
+    .first pre {
+        font-size: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first pre span {
+        font-size: 70px;
+    }
+
+    .first p {
+        font-size: 20px;
+    }
+
+    .first button {
+        font-size: 25px;
+        padding: 12px 59px;
+        border-radius: 9px;
+        margin: 25px 0px;
+    }
+
+    form {
+        width: 400px;
+        padding: 30px 0px;
+        border-radius: 9px;
+    }
+
+    form h4 {
+        font-size: 35px;
+        margin-bottom: 23px;
+    }
+
+    form input {
+        margin: 15px;
+        font-size: 18px;
+        padding: 7px 26px;
+    }
+
+    form button {
+        width: 291px;
+        margin: 17px;
+        font-size: 24px;
+        padding: 9px 9px;
+        border-radius: 9px;
+    }
+
+    form pre a {
+        font-size: 25px;
+    }
+} */
+
+
+
+/*  For Desktop: apply effects/styles for screens having more width than 1024px */
+@media screen and (min-width: 1024px) {
+    * {
+        font-family: 'Lucida Sans';
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-color: rgb(0, 0, 0);
+        /* background-color: red; */
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        background-image: url("bg.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 15px 0px;
+        background-color: rgba(0, 0, 0, 0.676);
+    }
+
+    span {
+        font-size: 45px;
+        font-weight: 600;
+        color: rgb(255, 115, 0);
+    }
+
+    nav ol {
+        display: flex;
+        list-style: none;
+    }
+
+    nav li {
+        color: white;
+        font-size: 14px;
+        margin: 0px 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    li:hover {
+        color: rgb(255, 115, 0);
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .search input {
+        color: white;
+        width: 200px;
+        font-size: 17px;
+        padding: 7px 0px 7px 11px;
+        border-color: rgb(255, 115, 0);
+        background-color: rgba(255, 68, 0, 0);
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    input::placeholder {
+        color: rgb(255, 255, 255);
+    }
+
+    button {
+        border: none;
+        cursor: pointer;
+        background-color: rgb(255, 115, 0);
+    }
+
+    .search button {
+        color: white;
+        padding: 10px 14px;
+        font-size: 15px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .search button:hover {
+        color: black;
+    }
+
+    .main {
+        display: flex;
+        margin-top: 108px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .first {
+        width: 50vw;
+        margin-right: 170px;
+    }
+
+    .first pre {
+        font-size: 55px;
+        font-weight: 500;
+        padding: 0px;
+        margin: 15px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first pre span {
+        font-size: 59px;
+        color: rgb(255, 115, 0);
+    }
+
+    .first p {
+        font-size: 17px;
+        margin: 15px 0px;
+        color: white;
+    }
+
+    .first button {
+        padding: 7px 40px;
+        font-size: 20px;
+        border-radius: 6px;
+        margin: 15px 0px;
+    }
+
+    .first button:hover {
+        background-color: white;
+    }
+
+    form {
+        width: 330px;
+        padding: 30px 0px;
+        border-radius: 7px;
+        background-color: rgba(0, 0, 0, 0.801);
+    }
+
+    form h4 {
+        font-size: 25px;
+        margin-bottom: 19px;
+        color: rgb(255, 115, 0);
+    }
+
+    form input {
+        color: white;
+        margin: 13px;
+        font-size: 15px;
+        padding: 7px 21px;
+        background-color: rgba(255, 51, 0, 0);
+    }
+
+    form button {
+        width: 235px;
+        margin: 13px;
+        font-size: 20px;
+        padding: 7px 9px;
+        border-radius: 8px;
+    }
+
+    form pre {
+        font-weight: 500;
+        margin: 13px 0px;
+    }
+
+    form pre a {
+        color: rgb(255, 115, 0);
+        cursor: pointer;
+    }
+
+    form p,
+    pre {
+        font-size: 15px;
+        padding: 4px 15px;
+        color: white;
+    }
+
+    .icon a {
+        text-decoration: none;
+    }
+
+    .icon ion-icon {
+        color: #fff;
+        font-size: 20px;
+        padding-left: 14px;
+        padding-top: 5px;
+        transition: 0.3s ease;
+    }
+
+    .icon ion-icon:hover {
+        color: #ff7200;
+    }
+}
